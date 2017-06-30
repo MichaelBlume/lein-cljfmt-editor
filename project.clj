@@ -1,4 +1,4 @@
-(defproject lein-cljfmt-editor "0.1.0-SNAPSHOT"
+(defproject lein-cljfmt-editor "0.1.0"
   :dependencies [[leinjacker "0.4.2"]
                  [lein-cljfmt "0.5.6"]]
   :description "Editor integration for cljfmt"
