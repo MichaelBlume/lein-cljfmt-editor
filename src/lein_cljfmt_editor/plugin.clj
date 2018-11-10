@@ -1,14 +1,14 @@
 (ns lein-cljfmt-editor.plugin
-  (:require [leiningen.cljfmt :refer [default-config]]
+  (:require [cljfmt.main :refer [default-options]]
             [meta-merge.core :refer [meta-merge]]
             [leinjacker.deps :as deps]))
 
 (defn get-settings [project]
-  (meta-merge default-config (:cljfmt project {})))
+  (meta-merge default-options (:cljfmt project {})))
 
 (defn middleware [project]
   (-> project
-    (deps/add-if-missing '[cljfmt "0.5.6"])
+    (deps/add-if-missing '[cljfmt "0.6.1"])
     (update-in
       [:repl-options :init]
       (fn [i]

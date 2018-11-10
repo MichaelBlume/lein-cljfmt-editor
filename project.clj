@@ -1,6 +1,7 @@
-(defproject lein-cljfmt-editor "0.1.0"
+(defproject lein-cljfmt-editor "0.1.1"
   :dependencies [[leinjacker "0.4.2"]
-                 [lein-cljfmt "0.5.6"]]
+                 [lein-cljfmt "0.6.1"]
+                 [meta-merge "1.0.0"]]
   :description "Editor integration for cljfmt"
   :url "https://www.github.com/MichaelBlume/lein-cljfmt-editor"
   :license {:name "Eclipse Public License"
